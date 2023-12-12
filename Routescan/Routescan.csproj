@@ -1,0 +1,33 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <Title>Routescan</Title>
+    <Authors>Mehmet Emin KARADAĞ</Authors>
+    <Description>Routescan, Ethereum ve Avalanche başta olmak üzere diğer tüm büyük EVM (Ethereum Sanal Makinesi) ağları için kapsamlı API, arama ve analiz işlemleri için geliştirilmiş bir .NET kütüphanesidir.</Description>
+    <Copyright>Tüm hakları saklıdır.</Copyright>
+    <PackageProjectUrl>https://github.com/emin-karadag/routescan</PackageProjectUrl>
+    <PackageIcon>Routescan-Logo.png</PackageIcon>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <RepositoryUrl>https://github.com/emin-karadag/routescan</RepositoryUrl>
+    <PackageTags>ethereum, avalanche, cryptocurrency, base, metis, optimism, xplus, dexalot, chiliz</PackageTags>
+    <Version>0.0.1</Version>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Routescan-Logo.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+
+</Project>
