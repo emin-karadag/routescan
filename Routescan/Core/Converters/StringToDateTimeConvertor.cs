@@ -14,7 +14,8 @@ namespace Routescan.Core.Converters
 
         public override void Write(Utf8JsonWriter writer, DateTime value, JsonSerializerOptions options)
         {
-            throw new InvalidOperationException($"Unable to parse {value} to datetime");
+            JsonSerializer.Serialize(writer, value, value.GetType(), options);
+            //throw new InvalidOperationException($"Unable to parse {value} to datetime");
         }
     }
 }

@@ -396,3 +396,7 @@ FodyWeavers.xsd
 
 # JetBrains Rider
 *.sln.iml
+/Routescan.Test/Routescan.Test.csproj
+/Routescan.Test/appsettings.json
+/Routescan.Test/Program.cs
+/Routescan.Test/Worker.cs

@@ -23,7 +23,8 @@ namespace Routescan.Core.Converters
 
         public override void Write(Utf8JsonWriter writer, int value, JsonSerializerOptions options)
         {
-            throw new InvalidOperationException($"Unable to parse {value} to int");
+            JsonSerializer.Serialize(writer, value, value.GetType(), options);
+            //throw new InvalidOperationException($"Unable to parse {value} to int");
         }
     }
 }

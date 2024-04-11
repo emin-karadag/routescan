@@ -21,7 +21,8 @@ namespace Routescan.Core.Converters
 
         public override void Write(Utf8JsonWriter writer, long value, JsonSerializerOptions options)
         {
-            throw new InvalidOperationException($"Unable to parse {value} to long");
+            JsonSerializer.Serialize(writer, value, value.GetType(), options);
+            //throw new InvalidOperationException($"Unable to parse {value} to long");
         }
     }
 }
